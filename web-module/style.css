@@ -1,0 +1,131 @@
+
+*, ::after, ::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'poppins', sans-serif; /* font */
+    font-size: 16px;
+    background-color: var();
+}
+section{
+    padding: 4rem 0;
+}
+.container{
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+/* -------------------------------------------------------------------- root  */
+:root{
+    /* background */
+    --background-color-00: #000;
+    --background-color-01: #FFF;
+    --background-color-02: #ccc;
+    --background-color-03: #ff0066;
+
+    /* font colors */
+    --font-color-00: #000;
+    --font-color-01: #FFF;
+    --font-color-02: #ccc;
+    --font-color-03: #ff0066;
+
+    /* font sizes */
+    --font-size-00: 1em;
+    --font-size-01: 1.2em;
+    --font-size-02: 1.4em;
+    --font-size-03: 2em;
+    --font-size-04: 2.4em;
+    --font-size-05: 3em;
+    --font-size-06: 3.2em;
+    --font-size-07: 3.6em;
+
+    /* opacity */
+    --opacity-00: 0;
+    --opacity-paragraph-font: 0.8;
+
+    /* shadoes */
+    --shadow-00: 0 0 20px rgba(0, 0, 0, 0.1);
+    --shadow-01: 0 0 20px 20px rgba(0, 0, 0, 0.1);
+
+    /* logo size */
+    --logo-size: 40px;
+
+    /* menu-icon */
+    --menu-icon: 32px;
+    --menu-icon-color: #000;
+
+    /* letter spacing */
+    letter-spacing: 01px;
+}
+
+/* ------------------------------------------------------------------- elements */
+a{
+    text-decoration: none;
+}
+h1{
+    font-size: var(--font-size-07);
+}
+h2{
+    font-size: var(--font-size-05);
+}
+h3{
+    font-size: var(--font-size-03);
+}
+h4{
+    font-size: var(--font-size-2);
+}
+p{
+    font-size: var(--font-size-00);
+    font-style: italic;
+    padding-bottom: 1rem;
+    max-width: 640px;
+    line-height: 1.6rem;
+
+}
+
+/* ------------------------------------------------------------------- buttons */
+.btn{
+    border: 2px solid var(--background-color-03);
+    background-color: var(--background-color-03);
+    color: var(--font-color-01);
+    outline: none;
+    cursor: pointer;
+    padding: 0.4rem 1.6rem;
+    font-size: var(--font-size-00);
+    border-radius: 5px;
+    font-weight: 400;
+}
+.btn-00{
+    background-color: var(--background-color-03);
+    color: var(--font-color-01);
+}
+
+/* ------------------------------------------------------------------- navigation */
+nav{
+    background-color: var(--background-color-01);
+    position: fixed;
+    box-shadow: var(--shadow-00);
+    width: 100%;
+}
+nav .left,
+nav .nav-links,
+nav .right{
+    display: flex;
+    align-items: center;
+}
+nav .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* logo */
+.logo{
+    width: var(--logo-size);
+    margin-left: 1rem;
+}
+/* menu icon */
+.menu-icon{
+    width: var(--menu-icon);
+}
